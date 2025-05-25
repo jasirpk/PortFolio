@@ -45,6 +45,10 @@ List<Map> skillItems = [
     'title': 'Bloc',
     'img': 'assets/images/pluginIcon.png',
   },
+    {
+    'title': 'Getx',
+    'img': 'assets/images/getx.png',
+  },
   {
     'title': 'Hive',
     'img': 'assets/images/hive_logo.png',
@@ -53,6 +57,10 @@ List<Map> skillItems = [
     'title': 'SqLite',
     'img': 'assets/images/sqlite_img.png',
   },
+   {
+    'title': 'Git',
+    'img': 'assets/images/git.png',
+  },
   {
     'title': 'DSA',
     'img': 'assets/images/dsa_imag.png',
@@ -60,5 +68,13 @@ List<Map> skillItems = [
   {
     'title': 'Figma',
     'img': 'assets/images/figma.jpg',
+  },
+  {
+    'title': 'VS Code',
+    'img': 'assets/images/vs code.png',
+  },
+  {
+    'title': 'A.Studio',
+    'img': 'assets/images/android_studio.png',
   },
 ];

@@ -1,5 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:web_portfolio/services/downlod_cv.dart';
 
@@ -49,15 +50,38 @@ class _MainMobileState extends State<MainMobile> {
           ),
           const SizedBox(height: 30),
           // intro message
-          const Text(
-            "Hi,\nI'm Jasir PK\nA Flutter Developer",
-            style: TextStyle(
-              fontSize: 24,
-              height: 1.5,
-              fontWeight: FontWeight.bold,
-              color: CustomColor.whitePrimary,
-            ),
-          ),
+          DefaultTextStyle(
+              style: TextStyle(
+                  fontSize: 24,
+                  height: 1.5,
+                  fontWeight: FontWeight.bold,
+                  color: CustomColor.whitePrimary,
+                  letterSpacing: 2,
+                  wordSpacing: 2),
+              child: AnimatedTextKit(animatedTexts: [
+                TypewriterAnimatedText('Hi, I\'m Jasir PK 👋'),
+              ])),
+          DefaultTextStyle(
+              style: TextStyle(
+                fontSize: 24,
+                height: 1.5,
+                fontWeight: FontWeight.bold,
+                color: CustomColor.whitePrimary,
+              ),
+              child: AnimatedTextKit(animatedTexts: [
+                TypewriterAnimatedText('A Flutter Developer 💙'),
+              ])),
+          DefaultTextStyle(
+              style: TextStyle(
+                fontSize: 24,
+                height: 1.5,
+                fontWeight: FontWeight.bold,
+                color: CustomColor.whitePrimary,
+              ),
+              child: AnimatedTextKit(animatedTexts: [
+                TypewriterAnimatedText('Welcome to my Portfolio!'),
+              ])),
+
           const SizedBox(height: 15),
           // contact btn
           MouseRegion(
