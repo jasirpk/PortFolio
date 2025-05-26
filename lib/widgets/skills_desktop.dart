@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../constants/colors.dart';
 import '../constants/skill_items.dart';
 
 class SkillsDesktop extends StatefulWidget {
@@ -38,7 +37,7 @@ class _SkillsDesktopState extends State<SkillsDesktop> {
                 Container(
                   width: 200,
                   decoration: BoxDecoration(
-                    color: CustomColor.bgLight2,
+                    color: Colors.black.withValues(),
                     borderRadius: BorderRadius.circular(5),
                   ),
                   child: ListTile(
@@ -81,11 +80,12 @@ class _SkillsDesktopState extends State<SkillsDesktop> {
                       message: skillItems[i]["title"]!,
                       preferBelow: true,
                       child: Chip(
+                      
                         padding: const EdgeInsets.symmetric(
                           vertical: 12.0,
                           horizontal: 16.0,
                         ),
-                        backgroundColor: CustomColor.bgLight2,
+                        backgroundColor: Colors.black.withValues(),
                         label: Text(
                          skillItems[i]["title"]!,
                           style: const TextStyle(color: Colors.white),

@@ -29,7 +29,7 @@ class ProjectsSection extends StatelessWidget {
           const SizedBox(height: 50),
           // Work projects cards
           ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 900),
+            constraints: const BoxConstraints(maxWidth: 1200),
             child: Wrap(
               spacing: 25,
               runSpacing: 25,

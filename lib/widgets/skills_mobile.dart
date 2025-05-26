@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:reactable/reactable.dart';
-
-import '../constants/colors.dart';
 import '../constants/skill_items.dart';
 
 class SkillsMobile extends StatefulWidget {
@@ -34,7 +31,7 @@ class _SkillsMobileState extends State<SkillsMobile> {
               margin: const EdgeInsets.only(bottom: 5.0),
               width: double.maxFinite,
               decoration: BoxDecoration(
-                color: CustomColor.bgLight2,
+                 color: Colors.black.withValues(),
                 borderRadius: BorderRadius.circular(5.0),
               ),
               child: ListTile(
@@ -76,7 +73,7 @@ class _SkillsMobileState extends State<SkillsMobile> {
             preferBelow: true,
             child: Chip(
               padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
-              backgroundColor: CustomColor.bgLight2,
+              backgroundColor: Colors.black.withValues(),
               label: Text(
                 skillItems[i]["title"],
                 style: const TextStyle(color: Colors.white),
