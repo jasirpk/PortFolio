@@ -3,6 +3,7 @@ import 'package:web_portfolio/constants/links.dart';
 import 'package:web_portfolio/constants/size.dart';
 import 'package:web_portfolio/widgets/custom_textfield.dart';
 import '../constants/colors.dart';
+// ignore: deprecated_member_use
 import 'dart:js' as js;
 
 class ContactSection extends StatelessWidget {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_portfolio/widgets/audio.dart';
 import 'package:web_portfolio/widgets/site_logo.dart';
 
 import '../constants/colors.dart';
@@ -28,6 +29,7 @@ class HeaderDesktop extends StatelessWidget {
             onTap: () {},
           ),
           const Spacer(),
+              AudioPlayerWidget(),
           for (int i = 0; i < navTitles.length; i++)
             Padding(
               padding: const EdgeInsets.only(right: 20),

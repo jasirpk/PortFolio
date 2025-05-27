@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_portfolio/widgets/audio.dart';
 
 import '../styles/style.dart';
 import 'site_logo.dart';
@@ -23,6 +24,8 @@ class HeaderMobile extends StatelessWidget {
             onTap: onLogoTap,
           ),
           const Spacer(),
+          AudioPlayerWidget(),
+  
           IconButton(
             onPressed: onMenuTap,
             icon: const Icon(Icons.menu),

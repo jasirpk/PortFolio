@@ -15,7 +15,7 @@ class SiteLogo extends StatelessWidget {
       child: const Text(
         "PK",
         style: TextStyle(
-          fontSize: 22,
+          fontSize: 28,
           fontWeight: FontWeight.bold,
           decoration: TextDecoration.underline,
           color: CustomColor.yellowSecondary,
