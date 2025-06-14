@@ -112,98 +112,89 @@ class _HomeScreenState extends State<HomeScreen>
                         const Text(
                           'What I can do',
                           style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: CustomColor.whitePrimary,
-                            letterSpacing: 2,
-                   wordSpacing: 2
-                          ),
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: CustomColor.whitePrimary,
+                              letterSpacing: 2,
+                              wordSpacing: 2),
                         ),
                         const SizedBox(height: 50),
                         isLargeScreen ? SkillsDesktop() : SkillsMobile(),
                       ],
                     ),
                   ),
-                 
                   ProjectsSection(key: navbarkeys[2]),
-             
-   Container(
-  key: navbarkeys[3],
-  width: screenWidth,
-  padding: const EdgeInsets.fromLTRB(25, 40, 25, 60),
-  decoration: BoxDecoration(
-    color: CustomColor.bgLight1,
-    boxShadow: [
-      BoxShadow(
-        color: Colors.white.withAlpha(3),
-        blurRadius: 10,
-        offset: const Offset(0, 6),
-      ),
-    ],
-  ),
-  child: Column(
-    mainAxisSize: MainAxisSize.min,
-    children: [
-     
-    Container(
-  width: 220,
-  height: 220,
-  decoration: BoxDecoration(
-    shape: BoxShape.circle,
-    image: DecorationImage(
-      image: AssetImage('assets/images/my_pic.jpg'),
-      fit: BoxFit.cover, // Spread to cover the entire circle
-    ),
-    boxShadow: [
-      BoxShadow(
-        color: Colors.blue.withValues(),
-        blurRadius: 10,
-        offset: Offset(0, 6),
-      ),
-    ],
-  ),
-),
-
-      const SizedBox(height: 20),
-
-      const Text(
-        'About Me',
-        style: TextStyle(
-          fontSize: 24,
-          fontWeight: FontWeight.bold,
-          color: CustomColor.whitePrimary,
-          letterSpacing: 2,
-          wordSpacing: 2,
-        ),
-      ),
-      const SizedBox(height: 50),
-
-      Center(
-        child: DefaultTextStyle(
-          style: const TextStyle(
-            fontSize: 22,
-            color: Colors.white,
-            fontWeight: FontWeight.w500,
-            letterSpacing: 2,
-            wordSpacing: 2,
-          ),
-          child: AnimatedTextKit(
-            repeatForever: true,
-            displayFullTextOnTap: true,
-            animatedTexts: [
-              TypewriterAnimatedText(aboutMe),
-              TypewriterAnimatedText(
-                'Let\'s create smooth, powerful experiences! 🚀',
-              ),
-            ],
-          ),
-        ),
-      ),
-    ],
-  ),
-),
-
-
+                  Container(
+                    key: navbarkeys[3],
+                    width: screenWidth,
+                    padding: const EdgeInsets.fromLTRB(25, 40, 25, 60),
+                    decoration: BoxDecoration(
+                      color: CustomColor.bgLight1,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.white.withAlpha(3),
+                          blurRadius: 10,
+                          offset: const Offset(0, 6),
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 220,
+                          height: 220,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/my_pic.jpg'),
+                              fit: BoxFit
+                                  .cover, // Spread to cover the entire circle
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.blue.withValues(),
+                                blurRadius: 10,
+                                offset: Offset(0, 6),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        const Text(
+                          'About Me',
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: CustomColor.whitePrimary,
+                            letterSpacing: 2,
+                            wordSpacing: 2,
+                          ),
+                        ),
+                        const SizedBox(height: 50),
+                        Center(
+                          child: DefaultTextStyle(
+                            style: const TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 2,
+                              wordSpacing: 2,
+                            ),
+                            child: AnimatedTextKit(
+                              displayFullTextOnTap: true,
+                              animatedTexts: [
+                                TypewriterAnimatedText(aboutMe),
+                                TypewriterAnimatedText(
+                                  'Let\'s create smooth, powerful experiences! 🚀',
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   const SizedBox(height: 30),
                   ContactSection(key: navbarkeys[4]),
                   const SizedBox(height: 30),
